@@ -1,0 +1,55 @@
+body {
+  background-color: #4B0082;
+}
+#wp {
+  position: relative;
+  width: 250px;
+  height: 140px;
+  left: 500px;
+  top: 100px;
+}
+#name {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  width: 200px;
+  height: 25px;
+  border-radius: 4px;
+}
+#pass {
+  position: absolute;
+  top: 55px;
+  left: 30px;
+  width: 200px;
+  height: 25px;
+  border-radius: 4px;
+}
+::-webkit-input-placeholder {
+  color:#C0C0C0;
+  text-align: center;
+}
+:-ms-input-placeholder      {
+  color:#C0C0C0;
+  text-align: center;
+}
+#btn {
+  position: absolute;
+  top: 100px;
+  left: 32px;
+  font-weight: 700;
+  color: white;
+  width: 200px;
+  height: 50px;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+}
+#btn:hover {
+   background: rgb(53, 167, 110);
+}
+#btn:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
