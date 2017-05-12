@@ -1,0 +1,22 @@
+body {
+  background-color: #9400D3;
+}
+#btn {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 17px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#yourIP {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  top: 60%;
+  left: 43%;
+  border-radius: 4px;
+  text-align: center;
+}
