@@ -1,5 +1,7 @@
 <?php
+  //Подключаем ReadBean
   require 'rb.php';
+  // Подключаемся к бд
   R::setup( 'mysql:host=localhost;dbname=online',
         'root', '' );
 

@@ -1,19 +1,26 @@
 <?php
 session_start();
   if(isset($_POST['send'])) {
+    //Определяем переменные
     $from = htmlspecialchars($_POST['from']);
     $to = htmlspecialchars($_POST['to']);
     $subject = htmlspecialchars($_POST['subject']);
     $message = htmlspecialchars($_POST['message']);
+
+    //Записываем переменные в сессию
     $_SESSION['from'] = $from;
     $_SESSION['to'] = $to;
     $_SESSION['subject'] = $subject;
     $_SESSION['message'] = $message;
+
+    // Определяем переменные для ошибок
     $error_from = "";
     $error_to = "";
     $error_subject = "";
     $error_message = "";
     $error = false;
+
+    // Проверяем полученные данные на наличие ошибок
     if ($from == "" || !preg_match('/@/', $from)) {
       $error_from = "Введите корректный email";
       $error = true;
@@ -30,6 +37,8 @@ session_start();
       $error_message = "Введите сообщение";
       $error = true;
     }
+    // Если ошибок нет, то отправляем письмо
+    // если есть - то подсвечиваем поле и выводим текст ошибки
     if (!$error) {
       $subject = "=?utf-8?B?".base64_encode($subject)."?=";
       $headers = "From: $from\r\nReply-to: $from\r\nContent-type: text/plain; charset=utf-8\r\n";

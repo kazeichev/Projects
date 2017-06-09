@@ -1,4 +1,5 @@
 <?php
+  // Создаем массив пользователя
   $users = array(
     "login;password",
     "admin;123",

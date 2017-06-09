@@ -27,6 +27,7 @@
     <?php
       if (isset($_POST['send-info'])) {
           $name = $_POST['name'];
+          // Паттерн для проверки корректности email
           $pattern_email = '/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u';
             if (preg_match($pattern_email, $_POST['email'])) {
               $email = $_POST['email'];
@@ -45,6 +46,7 @@
         $message .= $http_referer . "\r\n";
         $message .= $http_user_agent . "\r\n";
 
+        //Записываем данные в фаил .txt
         $file = fopen("info.txt", "a");
         fwrite($file, $message);
         fclose($file);

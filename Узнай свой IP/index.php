@@ -8,6 +8,7 @@
 </head>
 <body>
   <script type="text/javascript">
+  // Отображаем всплывающее окно
   function show(state){
     document.getElementById('window').style.display = state;
     document.getElementById('wrap').style.display = state;

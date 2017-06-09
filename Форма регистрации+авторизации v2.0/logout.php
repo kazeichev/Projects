@@ -1,4 +1,8 @@
 <?php
+/**
+* Форма логаута
+*
+*/
   //Подключаем RedBean
   require 'db.php';
   unset($_SESSION['logged_user']);
