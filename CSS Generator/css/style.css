@@ -1,0 +1,19 @@
+#border-radius{
+  width: 300px;
+  min-height: 200px;
+  font-family: 'OpenSans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+#br_out {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: 30px auto;
+}
+
+#br_textout {
+  width: 300px;
+  min-height: 50px;
+  margin-top: 30px;
+}
