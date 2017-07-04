@@ -1,0 +1,22 @@
+#slide {
+    width: 375px;
+    height: 400px;
+    border: 3px solid black;
+    position: relative;
+    overflow: hidden;
+}
+#slide_one,
+#slide_two {
+    width: 375px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+#slide_one {
+    background-color: yellow;
+}
+#slide_two {
+    background-color: blue;
+}
